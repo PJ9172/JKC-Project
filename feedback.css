@@ -1,0 +1,148 @@
+body {
+  background: linear-gradient(to bottom right, #66ffff 0%, #ff99cc 100%);
+  
+  }
+
+  .progress-label-left {
+    float: left;
+    margin-right: 0.5em;
+    line-height: 1em;
+  }
+
+  .progress-label-right {
+    float: right;
+    margin-left: 0.3em;
+    line-height: 1em;
+  }
+
+  .star-light {
+    color: grey;
+    margin-right: 10px;
+  }
+
+  .feed-card {
+    background-color: white;
+    margin-top: 50px;
+  }
+
+  .feed-cont {
+    margin-top: 47px;
+    margin-left: 45px;
+    width: 85%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .col-sm-4 {
+    width: 35%;
+    padding: 10px;
+  }
+
+  .feed-btn {
+    width: 70px;
+    height: 30px;
+    color: white;
+    background-color: rgb(0, 89, 255);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .progress-label-left .fas {
+    color: orange;
+  }
+
+  .progress {
+    width: 270px;
+    height: 15px;
+
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+  }
+
+  .star-rating .star:hover {
+    background-color: orange;
+  }
+
+  /* .modal {
+    border: 1px solid black;
+    background-color: white;
+    display: none;
+    width: 36%;
+    height: 52%;
+    position: fixed;
+    top: 30px;
+    left: 430px;
+    border-radius: 5px;
+  }
+
+  .modal-header {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal-title {
+    margin-left: 10px;
+    width: 93%;
+    font-size: 25;
+  } */
+
+  .modal-star {
+    color: orange;
+  }
+
+  .modal-star :hover {
+    color: orange;
+  } 
+
+  .close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+  }
+
+  .close:focus,
+  .close:hover {
+    color: #000;
+    text-decoration: none;
+    opacity: .75
+  }
+
+  .close:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+  button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .form-control {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 95%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(195, 191, 191);
+    border-radius: 5px;
+    font-size: 15;
+  }
+
+  ::placeholder {
+    color: #c7bfc8 !important;
+  } 
+  @media screen and (max-width: 770px) and (min-width: 300px) {
+    i{
+      display: none;
+    }
+  }  

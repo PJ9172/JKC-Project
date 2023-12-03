@@ -1,0 +1,88 @@
+*{
+    font-family: arial;
+}
+.footcon{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    padding: 15px;
+}
+.footcol{
+    width: 50%;
+    height: auto;   
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    justify-content: center;
+}
+.subcol{
+    width: 50%;
+    border-right: 1px solid grey;
+    padding-left: 15px;
+}
+.map{
+    margin-top: 25px;
+}
+.email{
+    color: rgb(14, 133, 218);
+    text-decoration: underline;
+    font-size: 14;
+}
+.footpara{
+    font-size: large;
+    color: rgb(182, 178, 178);
+    line-height: 1.5;
+    text-align: left;
+    /* margin-left: 5px; */
+}
+.footpara:hover{
+    cursor: pointer;
+    color: white;
+}
+.footli{
+    text-decoration: none;
+    color: rgb(182, 178, 178);
+    line-height: 1.5;
+    text-align: left;
+}
+.footli:hover{
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 770px) and (min-width: 300px) {
+    .footcon{
+        display: block;
+        margin-top: 400px;
+    }
+    .footcol{
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    .subcol{
+        width: 100%;
+    }
+    .map{
+        display: flex;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 560px) and (min-width: 300px) {
+    
+    .map{
+        display: flex;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 430px) and (min-width: 300px) {
+    
+    .map{
+        display: flex;
+        width: 310px;
+    }
+}

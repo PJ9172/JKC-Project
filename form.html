@@ -1,0 +1,666 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <link rel="stylesheet" href="form.css">
+  <script src="form.js"></script>
+  <title>Jaikranti</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="http://jaikranticollege.com/Design/extra-images/logo_2.png" type="image/png" />
+</head>
+
+<body>
+
+
+  <!--Nav Bar -->
+  <link rel="stylesheet" href="nav.css">
+  <header>
+    <div class="containe">
+      <nav class="navbar">
+        <a href="" class="nav-branding"><img class="navimg"
+            src="http://jaikranticollege.com/Design/extra-images/logo_2.png" alt="jkc" /></a>
+        <h1>
+          <b><a href="#" class="name"><u>Jaikranti College</u></a></b>
+        </h1>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"><i class="fa-solid fa-house fa-sm"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="streams.html"><i class="fa-sharp fa-solid fa-graduation-cap fa-sm"></i>Stream</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="addmission.html"><i class="fa-solid fa-building-columns fa-sm"></i>Admission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="event.php"><i class="fa-solid fa-calendar-week fa-sm"></i>Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html"><i class="fa-solid fa-comment fa-sm"></i> Feedback</a>
+          </li>
+          <li class="nav-item">
+            <div class="about">
+              <a class="nav-link" href="about.html"><i class="fa-sharp fa-solid fa-circle-info fa-sm"></i>
+                About</a>
+                <div class="inner">
+                  <a href="FACULTY.html"> <i class="fa-solid fa-users"></i> Faculty</a>
+                  <a href="feature.html"> <i class="fa-solid fa-star"></i> Features</a>
+                </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone fa-sm"></i> Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"><i class="fa-solid fa-user fa-sm"></i>Admin</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script src="./script.js"></script>
+
+
+
+  <form id="rf"></form>
+  <div class="heading"> <img src="http://jaikranticollege.com/Design/extra-images/logo_2.png" alt="" height="100px"><br>
+    <br>
+    <h4><b>Bharat Shikshan Prasarak Mandal Pune</b></h4>
+    <h2><b>Jaikranti College of Computer Science and<br> Management Studies, Pune</b> <br>
+      <h4 style="margin-top:10px;"><b>(Recognized by the Government of Maharashtra and Affiliated to Savitribai Phule
+          Pune University)</b></h4>
+  </div>
+  <center>
+    <h2><u><b>REGISTRATION FORM</b></u></h2><br>
+    <hr>
+  </center><br>
+  <form action="database.php" method="post" accept-charset="utf-8">
+    <div class="row">
+      <div class="r3"> <label class="element"><b>First Name: <span class="star">*</span></b></label><br> <input
+          type="text" name="fname" id="fname" placeholder=" Enter First Number" maxlength="20" required=""><br> <span class="error"
+          id="fname_err"></span> </div>
+      <div class="r3"> <label class="element"><b>Middel Name: <span class="star">*</span></b></label><br> <input
+          type="text" name="mname" id="mname" placeholder=" Enter Middel Number" maxlength="20"  required=""><br> <span class="error"
+          id="mname_err"></span> </div>
+      <div class="r3"> <label class="element">Last Name: <span class="star">*</span></label><br> <input type="text"
+          name="lname" id="lname" placeholder=" Enter Surname " maxlength="20"  required=""><br> <span class="error"
+          id="lname_err"></span> </div>
+    </div>
+    <div class="row">
+      <div class="r2"> <label class="element">Mother Name: <span class="star">*</span></label><br> <input type="text"
+          name="mother" value="" id="mother" placeholder=" Enter Mother Name" maxlength="20"  required=""><br> <span class="error"
+          id="mother_err"></span> </div>
+      <div class="r2"> <label class="element">Addhar Card No: <span class="star">*</span></label><br> <input type="text"
+          name="addhar" value="" id="addhar" placeholder=" Enter Addhar no." maxlength="12" minlength="12"
+          required=""><br> <span class="error" id="addhar_err"></span> </div>
+    </div>
+    <div class="row">
+      <div class="r2"> <label class="element">Date Of Birth: <span class="star">*</span></label> <input type="date"
+          name="dob" id="dob" class="dob" placeholder=" Enter Date Of Birth" min="1600-01-01" max="2023-01-01" required=""> </div>
+
+      <div class="r2"> <label class="element">Age: <span class="star">*</span></label> <input type="text" name="age"
+          id="age" readonly placeholder=" Enter Your Age" required="" maxlength="2" minlength="2" /><br> <span class="error"
+          id="age_err"></span> </div>
+    </div>
+    <div class="row">
+      <div class="r3"> <label class="element">Stream: <span class="star">*</span></label><br> <select name="stream"
+          id="stream" required="" class="sel">
+          <option value="">Select Stream</option>
+          <option value="B Sc Cyber & Digital Science">B Sc Cyber & Digital Science</option>
+          <option value="BCS">BCS</option>
+          <option value="MCS">MCS</option>
+          <option value="M.Sc computer application">M.Sc computer application</option>
+          <option value="BBA">BBA</option>
+          <option value="B.Com">B.Com</option>
+          <option value="M.Com">M.Com</option>
+          <option value="BBA(CA)">BBA(CA)</option>
+        </select> </div>
+      <div class="radio">
+        <center> <label class="element">Gender: <span class="star">*</span></label> <input type="radio" name="gender"
+            value="MALE" id="" placeholder="">Male <input type="radio" name="gender" value="FEMALE" id=""
+            placeholder="">Female <input type="radio" name="gender" value="OTHER" id="" placeholder="">Other </label>
+        </center>
+      </div>
+      <div class="r3"> <label class="element">Year: <span class="star">*</span></label><br> <select name="ayear"
+          id="Standard" class="sel" required="">
+          <option value="">Select The class Year</option>
+          <option value="First Year(FY)">First Year(FY)</option>
+          <option value="Second Year(SY)">Second Year(SY)</option>
+          <option value="Third Year(TY)">Third Year(TY)</option>
+        </select> </div>
+    </div>
+    <div class="row">
+      <div class="r3"> <label class="element">Cast Category: <span class="star">*</span></label> <select name="cast"
+          id="" required="" class="sel">
+          <option value="">Select Cast
+          <option value="OPEN">OPEN</option>
+          <option value="SC">SC</option>
+          <option value="ST">ST</option>
+          <option value="NT">NT</option>
+          <option value="VJNT">VJNT</option>
+          <option value="OBC">OBC</option>
+          <option value="SBC">SBC</option>
+          <option value="Creamy Layer">Creamy Layer</option>
+        </select> </div>
+      <div class="radio">
+        <center> <label class="element">Marital Status: <span class="star">*</label> <input type="radio" name="mstatus"
+            value="Married" id="" placeholder="" required="">Married <input type="radio" name="mstatus"
+            value="Unmarried" id="" placeholder="">Unmarried </center>
+      </div>
+      <div class="r3"> <label class="element"><b>Email-Id: <span class="star">*</span></b></label> <input type="text"
+        name="email" id="email" placeholder=" abc23@gmail.com"> <span class="error" id="email_err"></span> </div>
+    </div>
+    <div class="row">
+      <div class="r2"> <label class="element">Nationality: <span class="star">*</span></label> <select name="nationality"
+        id="" required="" class="sel">
+        <option value="">--Select--</option>
+        <option value="INDIAN">INDIAN</option>
+        
+      </select> </div>
+      <div class="r2"> <label class="element">Permanent Address: <span class="star">*</span></label> <input type="text"
+          name="adress" id="adress" placeholder=" Enter Address" required=""> <span class="error"
+          id="adress_err"></span> </div>
+    </div>
+    <div class="row">
+      <div class="r2"> <label class="element">District : <span class="star">*</span></label> <input type="text"
+          name="district" id="district" placeholder=" Enter District" required=""> <span class="error"
+          id="district_err"></span> </div>
+
+      <!-- <div class="r2"> <label class="element">State: <span class="star">*</span></label> <input type="text"
+          name="states" placeholder=" Enter State" required=""> <span class="error" id="states_err"></span> </div> -->
+        <br><br>
+          <div class="r2"> <label class="element">State: <span class="star">*</span></label><br> <select name="states"
+            id="" required="" class="sel" style="width: 93%;">
+            <option value="">Select State
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh	">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh	">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">	Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+          </select> </div>
+    </div>
+    <div class="row">
+      <div class="r3"> <label class="element">Parents Occupation(Optional): </label> <input type="text"
+          name="poccupation" value="" id="" placeholder=" Enter Parent Occupation"> </div>
+      <div class="r3"> <label class="element">Mobile Number: <span class="star">*</span></label> <input type="text"
+          name="mno" id="mno" placeholder=" Enter Mobile No" maxlength="10" minlength="10" required=""> <span
+          class="error" id="mno_err"></span> </div>
+      <div class="r3"> <label class="element">Parents Mobile No: <span class="star">*</span></label> <input type="text"
+          name="pno" id="pno" placeholder=" Enter Your Parent Mobile No" maxlength="10" minlength="10" required="">
+        <span class="error" id="pno_err"></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="r2"> <label class="element">Previous University: <span class="star">*</span></label> <input
+          type="text" name="preuni" value="" id="preuni" placeholder=" Enter University Name" required=""><br> <span
+          class="error" id="preuni_err"></span> </div>
+      <div class="r2"> <label class="element">Previous College Name: <span class="star">*</span></label> <input
+          type="text" name="prevcollege" value="" id="prevcollege" placeholder=" Enter College name" required=""><br>
+        <span class="error" id="prevcollege_err"></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="r2"> <label class="element">Previous College Seat no: <span class="star">*</span></label> <input
+          type="number" name="seatno" value="" id="" placeholder=" Enter seatno " maxlength="6" required=""> </div>
+      
+          <div class="r2"> <label class="element">Percentage: <span class="star">*</span></label> <input type="text"
+            name="percent" id="percent" placeholder=" Enter Your Percentage...85%" maxlength="4" minlength="2" required pattern="^(100(\.0{1,2})?|[1-9]?\d(\.\d{1,2})?)%?$">
+          <span class="error" id="percent_err" style="color: red;"></span>
+        </div>
+      </div>
+
+      <!-- <form id="percentageForm">
+        <label for="percentage">Enter Percentage:</label>
+        <input type="text" id="percentage" name="percentage" placeholder="e.g., 85%" required pattern="^(100(\.0{1,2})?|[1-9]?\d(\.\d{1,2})?)%?$">
+        <span id="percentageError" style="color: red;"></span> -->
+      
+
+
+
+
+    <div id="term&con" class="term" style="display:none;">
+      <ul type="circle solid">
+        <li> The information given above and the documents attached are true to the best of my knowledge.</li>
+        <li>I am not debarred from Board/University Examination.</li>
+        <li>All the Rules and Regulations of your college shall be binding on me.</li>
+        <li>I will fulfill the condition of 75% attendance in every subject.</li>
+        <li>If I disobey the Rules and Regulations of your college or if I fail to fulfill the conditions of 75%
+          attendance in every subject,<br> I understand that any admission will he cancelled or I will not be permitted
+          to appear at the Board/University/Examination</li>
+        <li>The decision taken by the college authorities shall be binding on me.</li>
+      </ul>
+    </div>
+    <div style="margin-left: 25px;"> <input type="checkbox" id="check" required="" onclick="t()"><b>Accept Terms And
+        Conditions.</b> <input type="checkbox"  required style="margin-left: 100px;"><b>Payment</b> </div>
+       
+    <div class="row"> <button class="btn" name="submit" >SUBMIT</button>
+      <!-- <button type="submit" class="btn" id="next" disabled=" disabled">NEXT</button> -->
+      <!-- <button class="button-73" role="button" name="submit">Submit</button> <button class="button-73" role="button" name="cancel" type="cancle">Cancle</button> -->
+      <button type="reset" class="btn1">CANCEL</button>
+    </div>
+  </form>
+
+  <script>
+
+    $(function () {
+      $("#fname_err").hide();
+      $("#mname_err").hide();
+      $("#lname_err").hide();
+      $("#pno_err").hide();
+      $("#mno_err").hide();
+      $("#preuni_err").hide();
+      $("#prevcollege_err").hide();
+      $("#mother_err").hide();
+      $("#addhar_err").hide();
+      $("#age_err").hide();
+      $("#nationality_err").hide();
+      $("#states_err").hide();
+      $("#district_err").hide();
+      $("#adress_err").hide();
+      $("#email_err").hide();
+      /*$("#percent_err").hide();*/
+
+      var errfname = false;
+      var errmname = false;
+      var errlname = false;
+      var errpno = false;
+      var errmno = false;
+      var erremother = false;
+      var erradress = false;
+      var erraddhar = false;
+      var errstates = false;
+      var errdistrict = false;
+      var errnationality = false;
+      var errage = false;
+      var erremail = false;
+      var errpreuni = false;
+      var errprevcollege = false;
+      /*var errpercent = false;*/
+
+      $("#fname").focusout(function () {
+        checkfname();
+      });
+      $("#mname").focusout(function () {
+        checkmname();
+      });
+      $("#lname").focusout(function () {
+        checklname();
+      });
+      $("#pno").focusout(function () {
+        checkpno();
+      });
+      $("#email").focusout(function () {
+        checkemail();
+      });
+      $("#mno").focusout(function () {
+        checkmno();
+      });
+      $("#mother").focusout(function () {
+        checkmother();
+      });
+      $("#preuni").focusout(function () {
+        checkpreuni();
+      });
+      $("#prevcollege").focusout(function () {
+        checkprevcollege();
+      });
+
+      $("#addhar").focusout(function () {
+        checkaddhar();
+      });
+      $("#age").focusout(function () {
+        checkage();
+      });
+      $("#adress").focusout(function () {
+        checkadress();
+      });
+      $("#district").focusout(function () {
+        checkdistrict();
+      });
+      $("#nationality").focusout(function () {
+        checknationality();
+      });
+      $("#states").focusout(function () {
+        checkstates();
+
+      /*$("#percent").focusout(function () {
+        checkpercent();
+      });*/
+      });
+
+
+      // $(document).ready(function() {
+      //           $('input[type="checkbox"]').click(function() {
+      //               var inputValue = $(this).attr("value");
+      //               $("." + inputValue).toggle();
+
+
+      //           });
+      //       });
+
+      function checkfname() {
+        var pattern = /^[a-zA-Z]*$/;
+        var fname = $("#fname").val();
+        if (pattern.test(fname) && fname !== '') {
+          $("#fname_err").hide();
+          $("#fname").css("color:green");
+        }
+        else {
+          $("#fname_err").show().text("*Only alphabets are allowed.");
+          $("#fname").css("color:red");
+          errfname = true;
+        }
+      }
+      function checkmname() {
+        var pattern = /^[a-zA-Z]*$/;
+        var mname = $("#mname").val();
+        if (pattern.test(mname) && mname !== '') {
+          $("#mname_err").hide();
+          $("#mname").css("color:green");
+        }
+        else {
+          $("#mname_err").show().text("*Only alphabets are allowed.");
+          $("#mname").css("color:red");
+          errmname = true;
+        }
+      }
+      function checklname() {
+        var pattern = /^[a-zA-Z]*$/;
+        var lname = $("#lname").val();
+        if (pattern.test(lname) && lname !== '') {
+          $("#lname_err").hide();
+          $("#lname").css("color:green");
+        }
+        else {
+          $("#lname_err").show().text("*Only alphabets are allowed.");
+          $("#lname").css("color", "2px solid #F90A0A");
+          errlname = true;
+        }
+      }
+
+      function checkmother() {
+        var pattern = /^[a-zA-Z]*$/;
+        var mother = $("#mother").val();
+        if (pattern.test(mother) && mother !== '') {
+          $("#mother_err").hide();
+          $("#mother").css("color:green");
+        }
+        else {
+          $("#mother_err").show().text("*Only alphabets are allowed.");
+          $("#mother").css("color:red");
+          errmother = true;
+        }
+      }
+
+      function checkpreuni() {
+        var pattern = /^[a-zA-Z ' ']*$/;
+        var preuni = $("#preuni").val();
+        if (pattern.test(preuni) && preuni !== '') {
+          $("#preuni_err").hide();
+          $("#preuni").css("color:green");
+        }
+        else {
+          $("#preuni_err").show().text("*Only alphabets are allowed.");
+          $("#preuni").css("color:red");
+          errpreuni = true;
+        }
+      }
+
+      function checkprevcollege() {
+        var pattern = /^[a-zA-Z ' ']*$/;
+        var prevcollege = $("#prevcollege").val();
+        if (pattern.test(prevcollege) && prevcollege !== '') {
+          $("#prevcollege_err").hide();
+          $("#prevcollege").css("color:green");
+        }
+        else {
+          $("#prevcollege_err").show().text("*Only alphabets are allowed.");
+          $("#prevcollege").css("color:red");
+          errprevcollege = true;
+        }
+      }
+
+      function checkaddhar() {
+        var pattern = /^[0-9]*$/;
+        var addhar = $("#addhar").val();
+        if (pattern.test(addhar) && addhar !== '' && addhar !== /^[a-zA-Z]*$/) {
+          $("#addhar_err").hide();
+          $("#addhar").css("color:green");
+        }
+        else {
+          $("#addhar_err").html("*Please enter valid Addhar-Card number.");
+          $("#addhar_err").show();
+          $("#addhar").css("color:red");
+          erraddhar = true;
+
+        }
+      }
+      /* function checkpercent() {
+        var pattern = /^[0-9]*$/;
+        var percent = $("#percent").val();
+        if (pattern.test(percent) && percent !== '' && percent !== /^[a-zA-Z]*$/) {
+          $("#percent_err").hide();
+          $("#percent").css("color:green");
+        }
+        else {
+          $("#percent_err").html("*Please enter valid percentage.");
+          $("#percent_err").show();
+          $("#percent").css("color:red");
+          errpercent = true;
+
+        }
+      } */
+
+      document.getElementById("percent").addEventListener("submit", function (event) {
+        var percentageInput = document.getElementById("percent");
+        var percent_err = document.getElementById("percent_err");
+        // Check if the input value matches the pattern
+        if (!percentageInput.checkValidity()) {
+          percent_err.textContent = "Please enter a valid percentage (e.g., 85% or 85.50%).";
+            event.preventDefault(); // Prevent form submission
+        } else {
+           percent_err.textContent = ""; // Clear error message
+        }
+      });
+
+
+
+
+
+
+
+      function checkage() {
+        var pattern = /^[0-9]*$/;
+        var age = $("#age").val();
+        if (pattern.test(age) && age !== '' && age !== /^[a-zA-Z]*$/) {
+          $("#age_err").hide();
+          $("#age").css("color:green");
+        }
+        else {
+          $("#age_err").html("*Please enter valid age.");
+          $("#age_err").show();
+          $("#age").css("color:red");
+          errage = true;
+
+        }
+      }
+      function checkpno() {
+        var pattern = /^[0-9]*$/;
+        var pno = $("#pno").val();
+        if (pattern.test(pno) && pno !== '' && pno !== /^[a-zA-Z]*$/) {
+          $("#pno_err").hide();
+          $("#pno").css("color:green");
+        }
+        else {
+          $("#pno_err").html("*Please enter valid mobile number.");
+          $("#pno_err").show();
+          $("#pno").css("color:red");m
+          errpno = true;
+        }
+      }
+      function checkmno() {
+        var pattern = /^[0-9]*$/;
+        var mno = $("#mno").val();
+        if (pattern.test(mno) && mno !== '' && mno !== /^[a-zA-Z]*$/) {
+          $("#mno_err").hide();
+          $("#mno").css("color:green");
+        }
+        else {
+          $("#mno_err").html("*Please enter valid mobile number.");
+          $("#mno_err").show();
+          $("#mno").css("color:red");
+          errmno = true;
+        }
+      }
+      function checkemail() {
+        var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        var email = $("#email").val();
+        if (pattern.test(email) && email !== '') {
+          $("#email_err").hide();
+          $("#email").css("color:green");
+        }
+        else {
+          $("#email_err").html("*Enter valid email.");
+          $("#email_err").show();
+          $("#emial").css("color:red");
+          erremail = true;
+        }
+      }
+      function checknationality() {
+        var pattern = /^[a-zA-Z]*$/;
+        var nationality = $("#nationality").val();
+        if (pattern.test(nationality) && nationality !== '') {
+          $("#nationality_err").hide();
+          $("#nationality").css("color:green");
+        }
+        else {
+          $("#nationality_err").show().text("*Only alphabets are allowed.");
+          $("#nationality").css("color:red");
+          errnationality = true;
+        }
+      }
+      function checkstates() {
+        var pattern = /^[a-zA-Z]*$/;
+        var states = $("#states").val();
+        if (pattern.test(states) && states !== '') {
+          $("#states_err").hide();
+          $("#states").css("color:green");
+        }
+        else {
+          $("#states_err").show().text("*Only alphabets are allowed.");
+          $("#states").css("color:red");
+          errstates = true;
+        }
+      }
+      function checkdistrict() {
+        var pattern = /^[a-zA-Z]*$/;
+        var district = $("#district").val();
+        if (pattern.test(district) && district !== '') {
+          $("#district_err").hide();
+          $("#district").css("color:green");
+        }
+        else {
+          $("#district_err").show().text("*Only alphabets are allowed.");
+          $("#district").css("color:red");
+          errdistrict = true;
+        }
+      }
+
+
+
+      $("#rf").submit(function () {
+        errfname = false;
+        errmname = false;
+        errlname = false;
+        errpno = false;
+        erremail = false;
+        errmno = false;
+        errmother = false;
+        erraddhar = false;
+        erradress = false;
+        errpreuni = false;
+        errprevcollege = false;
+        /*errpercent=false; */
+        errdistrict = false;
+        errstates = false;
+        errnationality = false;
+
+        checkfname();
+        checkmname();
+        checklname();
+        checkpno();
+        checkemail();
+        /*checkpercent(); */
+        checkmno();
+        checkmother();
+        checkaddhar();
+        checkadress();
+        checkpreuni();
+        checkprevcollege();
+        checkstates();
+        checkdistrict();
+        checknationality();
+
+        if (errfname === false && errmname === false && errlname === false && errpno === false && erremail === false && errmno === false && erraddhar === false && erradress === false && errpreuni === false && errpno === false && errprevcollege === false && errstates === false && errdistrict === false && errnationality === false && errpercent=== false) {
+          alert("Registration Successfull");
+          return true;
+        }
+        else {
+          alert("Please fill the form correctly!!");
+          return false;
+        }
+      });
+    });
+
+    function t() {
+  var checkBox = document.getElementById("check");
+  var text = document.getElementById("term&con");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>

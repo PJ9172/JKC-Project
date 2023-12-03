@@ -1,0 +1,274 @@
+ /* body section */
+ .center {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -20px;
+}
+
+
+.centerhead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(255, 228, 72);
+    border-bottom: 3px solid red;
+    border-top: 3px solid red;
+}
+
+.chi {
+    width: 20%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chi2{
+    width: 20%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chi2img{
+    width: 150px;
+    height: 100px;
+}
+.chiimg {
+    width: 100px;
+    height: 100px;
+
+}
+
+.chh {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.chrp {
+    text-align: center;
+    font-weight: 700;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.headingjk {
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 0.1px;
+}
+
+
+.hedp1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #e79800;
+    margin-top: 10px;
+}
+
+.hedp2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #2f2f2f;
+    margin-top: 20px;
+}
+
+.hedp3 {
+    line-height: 30px;
+    text-align: justify;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.info{
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+}
+
+/*Button */
+.button-41 {
+    background-color: initial;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #00bd68;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    height: 44px;
+    line-height: 44px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 200px;
+    z-index: 9;
+    border: 1;
+    border-color: #00bd68;
+    margin-top: 40px;
+    margin-left: 20px;
+
+}
+
+.button-41:hover {
+    background: #00bd68;
+    color: white;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+.mySlides img{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+.dot{
+ height: 10px;
+  width: 10px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  .prev, .next,.text {font-size: 14px}
+}
+
+
+
+
+  @media screen and (max-width: 770px) and (min-width: 300px) {
+   
+    .center{
+        display: block;
+    }
+    .head3{
+        width: 100%;
+    }
+    .hedp3 {
+        font-size: 12px;
+        text-align: justify;
+    }
+    .middle{
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+    }
+    .middle-left{
+        width: 100%;
+        
+    }
+    .middle-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .clgimg{
+        height: 40px;
+    }
+    
+    .chiimg{
+        width: 50px;
+        height: 50px;
+    }
+    .chi2img{
+        width: 50px;
+        height: 50px;
+    }
+    .chrp{
+        font-size: 12px;
+    }
+    .headingjk{
+        font-size: 15px;
+    }
+    .centerhead{
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    .hedp1 {
+        font-family: "Roboto Slab", serif;
+        font-size: 14px;
+    }
+    .hedp2 {
+        font-family: "Roboto Slab", serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 29px;
+        color: #2f2f2f;
+        margin-top: 20px;
+    }
+    .buttonss{
+        display:flex;
+    }
+    .btnn1{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btnn2{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-41{
+        margin-top: 15px;
+        width: 90%;
+        font-size: 12px;
+    }
+  }

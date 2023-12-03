@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+}
+
+header{
+  background-color:white;
+  /* margin-bottom: 20px; */
+}
+
+.navbar li{
+  list-style: none;
+}
+
+a{
+  color:#262626;
+  text-decoration: none;
+  font-size: large;
+}
+i{
+  padding-right: 3px;
+}
+
+.containe{
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.nav-branding{
+ padding-left:50px;
+ 
+}
+.name{
+  display:none;
+}
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link{
+  transition: 0.3s ease-out;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link:hover{
+  color: dodgerblue;
+}
+
+.about .inner{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+    padding:5px;
+}
+.about .inner a{
+  display: block;
+  margin-top: 10px;
+}
+.about .inner a:hover{
+  color:dodgerblue;
+}
+.about:hover .inner{
+  display: block;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+
+.navimg{
+  width:50px; 
+  height:50px;
+}
+
+@media(max-width:1024px){
+  .hamburger{
+    display: block;
+  }
+.name{
+  display: block;
+  
+}
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    position: absolute;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color:white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .nav-item{
+    margin: 16px 0;
+  }
+
+  .nav-menu.active{
+    left: 0;
+  }
+}
+
+/* 
+ section */
+.line{
+  text-align: center;
+  padding-top: 300px;
+}

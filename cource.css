@@ -1,0 +1,105 @@
+body {
+  /* background: #eee; */
+  background: linear-gradient(to bottom right, #86fcfc 0%, #fb60bd 100%);
+
+}
+a{
+  text-decoration: none;
+}
+#add{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.con{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 30px;
+  position: relative;
+}
+li{
+  list-style: none;
+}
+.card {
+  width: 470px;
+  height: 500px;
+  perspective: 500px;
+  position: relative;
+}
+.back img{
+  margin-top: 10px;
+  border-radius: 20px;
+}
+.content {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: #03446A;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  background-color: white;
+  transform: rotateY( 180deg );
+}
+.back li{
+  margin-left: 20px;
+}
+.back h4{
+  color: red;
+  margin: 15px;
+}
+.back h2{
+  color: rgb(8, 31, 200);
+}
+li{
+  line-height: 25px;
+}
+
+.pdf{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.pdf button{
+  height: 30px;
+  width: 120px;
+  font-weight: 700;
+  font-family: arial black;
+  background-color: rgb(250, 17, 17);
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+}
+.pdf button:hover{
+  background-color: white;
+  color: rgb(245, 44, 44);
+  border: 1px solid rgb(245, 44, 44);
+  transform: 1s;
+  box-shadow: rgba(0, 0, 0, 0.315) 3px 3px 3px 3px;
+}

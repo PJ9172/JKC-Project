@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <style>
+        body {
+            /* background-color:#00ff5573; */
+            background: linear-gradient(to bottom right, #66ffff 0%, #ff99cc 100%);
+
+        }
+
+        .main {
+            /* border: 1px solid black; */
+            margin-top: 80px;
+            background-color:white;
+            width: 80%;
+            height: 80%;
+            box-shadow: rgba(0, 0, 0, 0.315) 4px 4px 5px 5px
+        }
+
+        .rm {
+            margin-top: 40px;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .row {
+            /* border: 1px solid black; */
+            font-size: 25;
+            width: auto;
+        }
+
+        .btn {
+            margin-top: 50px;
+            width: 80px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: black;
+            font-weight: 700;
+            font-size: 16px;
+            color: white;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+
+        select {
+            margin-top: 15px;
+            width: 300px;
+            height: 30px;
+            border: 2px solid black;
+        }
+        input{
+            margin-left: 20px;
+            margin-top: 15px;
+            border: 2px solid black;
+            width: 300px;
+            height: 30px;
+        }
+        @media screen and (min-device-width:310px) and  (max-device-width:770px){
+            .main{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="excel.php" method="post">
+        <center>
+            <div class="main">
+                <h1>Get Addmission <br> Details</h1>
+                <div style="text-align: center; margin-top: 20px;">
+                    <!-- <a href="logout.php">Logout</a> -->
+                    <!-- <a href="logout.php" class="btn btn-dark mb-3">Logout</a> -->
+
+                </div>
+                <div class="rm">
+                    <div class="row">
+                        <label for="stream">Select Stream:</label>
+                        <select id="stream" name="stream" required>
+                            <option value="">---Select Stream---</option>
+                            <option value="BBA(CA)">BBA(CA)</option>
+                            <option value="BBA">BBA</option>
+                            <option value="BCS">BCS</option>
+                            <option value="B Sc Cyber & Digital Science">B Sc Cyber & Digital Science</option>
+
+
+                            <option value="B.Com">B.Com</option>
+                            <option value="M.SC">M.SC</option>
+                            <option value="M.Sc computer application">M.Sc computer application</option>
+                            <option value="MCS">MCS</option>
+                            <option value="M.Com">M.Com</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <label for="cast">Select Cast:</label>
+                        <select id="cast" name="cast" required>
+                            <option value="">---Select Cast---</option>
+                            <option value="OPEN">OPEN</option>
+                            <option value="SC">SC</option>
+                            <option value="ST">ST</option>
+                            <option value="NT">NT</option>
+                            <option value="VJNT">VJNT</option>
+                            <option value="OBC">OBC</option>
+                            <option value="SBC">SBC</option>
+                            <option value="Creamy layer">Creamy layer</option>
+                        </select>
+
+                    </div>
+                    <div class="row">
+                        <label>Select Year: </label>
+                        <select name="ayear">
+                            <option value="">Select The class Year</option>
+                            <option value="First Year(FY)">First Year(FY)</option>
+                            <option value="Second Year(SY)">Second Year(SY)</option>
+                            <option value="Third Year(TY)">Third Year(TY)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rm">
+                    <div class="row">
+                        From Date: <br><input type="date" name="from_date" required>
+                    </div>
+                    <div class="row">
+                        To Date: <br><input type="date" name="to_date" required>
+                    </div>
+                </div>
+               
+                <input type="submit" name="submit" value="submit" class="btn">
+            </div>
+        </center>
+        <!-- Add a Logout link at the bottom of the page -->
+    
+    </form>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+
+
+
+.jkhead{
+    margin-top: 25px; 
+    color: rgb(5, 53, 156);
+}
+.h p{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+}
+
+    .h{
+        /* text-align: center; */
+        width: 100%;
+        border: 2px solid black;
+        font-size: 35px;
+        margin-top: 20px;
+        /* background-color: rgb(30, 247, 88); */
+          background: linear-gradient(to bottom right, #93f3f3 0%, #ec93c9 100%);
+        color: black;
+        height: 50px;
+        box-shadow: 10px 10px 20px #d7d6d6;
+        transition: all 0.5s ease;
+        border-left: none;
+        border-right: none;
+    }
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    font-size: 25px;
+    margin-top: 15px;
+    width: 80%;
+}
+.aboutus, .vision,.mission,.objective{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.para li{
+    margin-top: 10px;
+}
+
+.temp{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.temp button{
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: #04fdd3;
+    border-radius: 10px;
+}
+.temp button:hover{
+    box-shadow: rgba(0, 0, 0, 0.315) 4px 4px 5px 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.square{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+}
+@media screen and (max-width: 770px) and (min-width: 300px) {
+    
+    .h{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+    .para{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+    }
+    .aboutus{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+    .aboutus .para{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .square{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+    }
+    marquee{
+        display: none;
+    }
+}
+@media screen and (max-width: 580px) and (min-width: 300px) {
+    .temp{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: auto;
+    }
+    .temp button{
+        margin-top: 30px;
+    }
+    marquee{
+        display: none;
+    }
+}

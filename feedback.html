@@ -1,0 +1,422 @@
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="boot.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Jaikranti</title>
+  <link rel="icon" href="http://jaikranticollege.com/Design/extra-images/logo_2.png" type="image/png" />
+</head>
+
+<body>
+
+  <!--Nav Bar -->
+  <link rel="stylesheet" href="feednav.css">
+  <header>
+    <div class="containe">
+      <nav class="navbar">
+        <a href="" class="nav-branding"><img class="navimg"
+            src="http://jaikranticollege.com/Design/extra-images/logo_2.png" alt="jkc" /></a>
+        <h1>
+          <b><a href="#" class="name"><u>Jaikranti College</u></a></b>
+        </h1>
+        <ul class="navmenu">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"><i class="fa-solid fa-house fa-sm"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="streams.html"><i class="fa-sharp fa-solid fa-graduation-cap fa-sm"></i>Stream</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="addmission.html"><i class="fa-solid fa-building-columns fa-sm"></i>Admission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="event.php"><i class="fa-solid fa-calendar-week fa-sm"></i>Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html"><i class="fa-solid fa-comment fa-sm"></i> Feedback</a>
+          </li>
+          <li class="nav-item">
+            <div class="about">
+              <a class="nav-link" href="about.html"><i class="fa-sharp fa-solid fa-circle-info fa-sm"></i>
+                About</a>
+                <div class="inner">
+                  <a href="FACULTY.html"> <i class="fa-solid fa-users"></i> Faculty</a>
+                  <a href="feature.html"> <i class="fa-solid fa-star"></i> Features</a>
+                </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone fa-sm"></i> Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"><i class="fa-solid fa-user fa-sm"></i>Admin</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script src="./script.js"></script>
+
+
+  <!-- feedback -->
+  <center>
+    <div class="feed-cont">
+      <h1 style="font-family:Times New Roman;font-size: 40;text-align: left;"><b>Review & Rating</b></h1>
+      <div class="feed-card">
+
+        <div class="row">
+
+          <div class="col-sm-4 text-center">
+            <h1 style="color:orange;font-family: arial;font-size: 40;"><b><span id="average_rating">0.0</span> / 5</b>
+            </h1>
+            <div class="mb-3"><i class="fas fa-star star-light mr-1 main_star"></i><i
+                class="fas fa-star star-light mr-1 main_star"></i><i
+                class="fas fa-star star-light mr-1 main_star"></i><i
+                class="fas fa-star star-light mr-1 main_star"></i><i class="fas fa-star star-light mr-1 main_star"></i>
+            </div>
+            <h2 style="font-weight: normal;font-size: 30;"><span id="total_review">0</span> Review</h2>
+          </div>
+
+          <div class="col-sm-4">
+            <p>
+            <div class="progress-label-left"><b>5</b><i class="fas fa-star text-warning"></i></div>
+            <div class="progress-label-right">(<span id="total_five_star_review">0</span>)</div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100" id="five_star_progress"></div>
+            </div>
+            </p>
+            <p>
+            <div class="progress-label-left"><b>4</b><i class="fas fa-star text-warning"></i></div>
+            <div class="progress-label-right">(<span id="total_four_star_review">0</span>)</div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100" id="four_star_progress"></div>
+            </div>
+            </p>
+            <p>
+            <div class="progress-label-left"><b>3</b><i class="fas fa-star text-warning"></i></div>
+            <div class="progress-label-right">(<span id="total_three_star_review">0</span>)</div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100" id="three_star_progress"></div>
+            </div>
+            </p>
+            <p>
+            <div class="progress-label-left"><b>2</b><i class="fas fa-star text-warning"></i></div>
+            <div class="progress-label-right">(<span id="total_two_star_review">0</span>)</div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100" id="two_star_progress"></div>
+            </div>
+            </p>
+            <p>
+            <div class="progress-label-left"><b>1</b><i class="fas fa-star text-warning"></i></div>
+            <div class="progress-label-right">(<span id="total_one_star_review">0</span>)</div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                aria-valuemax="100" id="one_star_progress"></div>
+            </div>
+            </p>
+          </div>
+          <div class="col-sm-4 text-center">
+            <h2 style="font-family:serif;font-weight: normal;font-size: 35;">Share Your Experience Here!
+            </h2>
+            <button type="button" name="add_review" id="add_review" class="feed-btn">Review</button>
+          </div>
+        </div>
+
+      </div>
+  </center>
+  <div class="mt-5" id="review_content"></div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      var rating_data = 0;
+
+      $("#add_review").click(function () {
+        $("#review_modal").modal("show");
+      });
+
+      $(document).on("mouseenter", ".submit_star", function () {
+        var rating = $(this).data("rating");
+
+        reset_background();
+
+        for (var count = 1; count <= rating; count++) {
+          $("#submit_star_" + count).addClass("text-warning");
+        }
+      });
+
+      function reset_background() {
+        for (var count = 1; count <= 5; count++) {
+          $("#submit_star_" + count).addClass("star-light");
+
+          $("#submit_star_" + count).removeClass("text-warning");
+        }
+      }
+
+      $(document).on("mouseleave", ".submit_star", function () {
+        reset_background();
+
+        for (var count = 1; count <= rating_data; count++) {
+          $("#submit_star_" + count).removeClass("star-light");
+
+          $("#submit_star_" + count).addClass("text-warning");
+        }
+      });
+
+      $(document).on("click", ".submit_star", function () {
+        rating_data = $(this).data("rating");
+      });
+
+      $("#save_review").click(function () {
+        var user_name = $("#user_name").val();
+
+        var user_review = $("#user_review").val();
+
+        if (user_name == "" || user_review == "") {
+          alert("Please Fill Both Field");
+          return false;
+        } else {
+          $.ajax({
+            url: "submit_rating.php",
+            method: "POST",
+            data: {
+              rating_data: rating_data,
+              user_name: user_name,
+              user_review: user_review,
+            },
+            success: function (data) {
+              $("#review_modal").modal("hide");
+
+              load_rating_data();
+
+              alert(data);
+            },
+          });
+        }
+      });
+
+      load_rating_data();
+
+      function load_rating_data() {
+        $.ajax({
+          url: "submit_rating.php",
+          method: "POST",
+          data: { action: "load_data" },
+          dataType: "JSON",
+          success: function (data) {
+            $("#average_rating").text(data.average_rating);
+            $("#total_review").text(data.total_review);
+
+            var count_star = 0;
+
+            $(".main_star").each(function () {
+              count_star++;
+              if (Math.ceil(data.average_rating) >= count_star) {
+                $(this).addClass("text-warning");
+                $(this).addClass("star-light");
+              }
+            });
+
+            $("#total_five_star_review").text(data.five_star_review);
+
+            $("#total_four_star_review").text(data.four_star_review);
+
+            $("#total_three_star_review").text(data.three_star_review);
+
+            $("#total_two_star_review").text(data.two_star_review);
+
+            $("#total_one_star_review").text(data.one_star_review);
+
+            $("#five_star_progress").css(
+              "width",
+              (data.five_star_review / data.total_review) * 100 + "%"
+            );
+
+            $("#four_star_progress").css(
+              "width",
+              (data.four_star_review / data.total_review) * 100 + "%"
+            );
+            $("#three_star_progress").css(
+              "width",
+              (data.three_star_review / data.total_review) * 100 + "%"
+            );
+            $("#two_star_progress").css(
+              "width",
+              (data.two_star_review / data.total_review) * 100 + "%"
+            );
+            $("#one_star_progress").css(
+              "width",
+              (data.one_star_review / data.total_review) * 100 + "%"
+            );
+            if (data.review_data.length > 0) {
+              var html = "";
+              for (var count = 0; count < data.review_data.length; count++) {
+                html += `<div class="row mb-3">`;
+                html += `<div class="col-sm-11">`;
+                html += `<div class="card">`;
+                html +=
+                  `<div class="card-header"><b>` +
+                  data.review_data[count].user_name +
+                  "</b></div>";
+                html += `<div class="card-body">`;
+                for (var star = 1; star <= 5; star++) {
+                  var class_name = "";
+                  if (data.review_data[count].rating >= star) {
+                    class_name = "text-warning";
+                  } else {
+                    class_name = "star-light";
+                  }
+                  html += `<i class="fas fa-star ` + class_name + ` mr-1"></i>`;
+                }
+                html += "<br />";
+                html += data.review_data[count].user_review;
+                html += "</div>";
+                html +=
+                  `<div class="card-footer text-right">On ` +
+                  data.review_data[count].datetime +
+                  "</div>";
+                html += "</div>";
+                html += "</div>";
+                html += "</div>";
+              }
+              $("#review_content").html(html);
+            }
+          },
+        });
+      }
+    });
+  </script>
+
+  <!-- footer -->
+<link rel="stylesheet" href="footer.css">
+<footer>
+    <center>
+        <div class="footcon">
+            <div class="footcol">
+                <div class="subcol">
+                    <ul type="none">
+                        <a href="home.html" class="footli">
+                            <li>Home</li>
+                        </a>
+                        <a href="about.html" class="footli">
+                            <li>About Us</li>
+                        </a>
+                        <a href="streams.html" class="footli">
+                            <li>Streams</li>
+                        </a>
+                        <a href="" class="footli">
+                            <li>Placements</li>
+                        </a>
+                        <a href="addmission.html" class="footli">
+                            <li>Admission</li>
+                        </a>
+                        <a href="feature.html" class="footli">
+                            <li>Facilities</li>
+                        </a>
+                        <a href="" class="footli">
+                            <li>Powered By Developers</li>
+                        </a><br>
+                        <a href="contact.html" class="footli">
+                            <li>Contact Us</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="subcol">
+                    <ul type="none">
+                        <li>
+                            <p class="footpara">Jaikrant College Of Computer Science & Management Studies. <br><br> BRT
+                                Bus
+                                Stand
+                                Katraj Pune <br>Tal:
+                                Haveli (corporation Area) <br>Dist: Pune Pincode: 411046</p>
+                        </li><br>
+                        <li>
+                            <p class="footpara">Phone: (020) 24317168</p>
+                        </li>
+                        <li>
+                            <p class="footpara"> Email: <a href="" class="email">principal@jaikranticollege.com</a>
+                            </p>
+                        </li>
+                        <ul></ul>
+                </div>
+            </div>
+
+
+            <div class="footcol">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2202.2414088267255!2d73.85683946855102!3d18.44672941970081!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eaea485f3abb%3A0xc0dca6d9b2adb08e!2sJaikranti%20College!5e0!3m2!1sen!2sin!4v1688126970648!5m2!1sen!2sin"
+                    width="500" height="200" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </center>
+</footer>
+
+</body>
+
+</html>
+
+
+<div id="review_modal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" style="text-align: left;font-weight: normal;">Submit Review</div>
+        <div><button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button></div>
+      </div>
+      <div class="modal-body">
+        <center>
+          <h2 class="modal-star">
+            <i class="fas fa-star star-light submit_star mr-1" id="submit_star_1" data-rating="1"></i>
+            <i class="fas fa-star star-light submit_star mr-1" id="submit_star_2" data-rating="2"></i>
+            <i class="fas fa-star star-light submit_star mr-1" id="submit_star_3" data-rating="3"></i>
+            <i class="fas fa-star star-light submit_star mr-1" id="submit_star_4" data-rating="4"></i>
+            <i class="fas fa-star star-light submit_star mr-1" id="submit_star_5" data-rating="5"></i>
+          </h2>
+          <div class="form-group"><input type="text" name="user_name" id="user_name" class="form-control"
+              placeholder="Enter Your Name" /></div>
+          <div class="form-group"><select name="user_review" id="user_review" class="form-control"
+              placeholder="Write Your Feedback Here....">
+              <option value="Select">---Select---</option>
+              <option value="Excellent">Excellent</option>
+              <option value="Best">Best</option>
+              <option value="Good">Good</option>
+              <option value="Ok">OK</option>
+              <option value="Bad">Bad</option>
+            </select></div>
+          <div class="form-group text-center mt-4"><button type="button" class="feed-btn"
+              id="save_review">Submit</button>
+          </div>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
